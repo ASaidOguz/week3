@@ -37,11 +37,11 @@ template HitAndBlow() {
     for (j=0; j<4; j++) {
         lessThan[j] = LessThan(4);
         lessThan[j].in[0] <== guess[j];
-        lessThan[j].in[1] <== 10;
+        lessThan[j].in[1] <== 6;
         lessThan[j].out === 1;
         lessThan[j+4] = LessThan(4);
         lessThan[j+4].in[0] <== soln[j];
-        lessThan[j+4].in[1] <== 10;
+        lessThan[j+4].in[1] <== 6;
         lessThan[j+4].out === 1;
         for (k=j+1; k<4; k++) {
             // Create a constraint that the solution and guess digits are unique. no duplication.
